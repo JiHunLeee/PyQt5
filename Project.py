@@ -73,7 +73,7 @@ class Thread2(QThread):
 			if (self.distance <= 5.00):
 				pwm.start(50.0)
 				pwm.ChangeFrequency(melody[7])
-				print("가깝당")
+				print("너무 가깝습니다")
 				time.sleep(0.5)
 				pwm.stop()
 				time.sleep(0.1)
@@ -81,14 +81,14 @@ class Thread2(QThread):
 			#elif (distance <= 10) << 이게 좀 더 맞는말
 				pwm.start(50.0)
 				pwm.ChangeFrequency(melody[7])
-				print("조금 가깝당")
+				print("가깝습니다")
 				time.sleep(0.5)
 				pwm.stop()
 				time.sleep(1)
 			elif (10 <  self.distance <= 15):
 				pwm.start(50.0)
 				pwm.ChangeFrequency(melody[7])
-				print("여유가 많음")
+				print("여유가 많습니다")
 				time.sleep(0.5)
 				pwm.stop()
 				time.sleep(1.5)
